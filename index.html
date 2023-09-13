@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+    <meta name="description" content="">
+    <meta name="keywords" content=""/>
+	<meta name="HandheldFriendly" content="true">
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <script src="js/jQuery3.6.4.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <link rel="preload" href="img/principal.webp" as="image" />
+
+    <title>Aji-no-moto</title>
+</head>
+<body>
+    <header class="header flex">
+            <div class="header__principal">
+                <img src="img/logo-ajinomoto.svg" alt=" " title=" " class="header__logo" width="99" height="72">
+                <img id="ico-menu" src="img/ico-menu.svg" alt="Menú" width="24" height="16" class="header__menu">
+            </div>
+            <nav class="header__nav">
+                <a href="#ajinomoto" class="header__link" id="nav_ajinomoto">¿QU&Eacute; ES AJI-NO-MOTO?</a>
+                <a href="#sumate" class="header__link" id="nav_sumate">SUMATE AL DESAF&Iacute;O</a>
+                <a href="#recetas" class="header__link" id="nav_recetas">RECETAS</a>
+                <button class="header__link" onclick="$('popup_participar').show();"><span class="header__participar">PARTICIPAR</span></button>
+            </nav>
+    </header>
+
+    <main class="main">
+        <h1>AJI-NO-MOTO</h1>
+        <div class="galeria">
+            <img src="img/slider-desktop.webp" alt="Aji-no-moto el secreto del sabor">
+            <img src="img/slider-desktop.webp" alt="Aji-no-moto el secreto del sabor">
+        </div> 
+        <section class="desafio rt10" id="sumate">
+            <p class="desafio__texto">
+                ¿Ya descubriste el secreto del sabor? Ven&iacute; a ponerlo a prueba.
+                <span class="desafio__span">¡SUMATE AL DESAF&Iacute;O!</span>
+            </p>
+            <div class="desafio__video rt10 ">
+                <video preload="yes" autoplay loop muted playsinline webkit-playsinline x5-playsinline   poster="img/video-encabezado.webp" class="rt10">
+                    <source src="" type="video/mp4">
+                    Su navegador no reproduce videos.
+                </video>
+            </div>
+            <p class="desafio__texto desafio__texto2">
+                Particip&aacute; del <strong>#Desaf&iacute;oAjinomoto</strong>. Podr&aacute;s probar all&iacute; mismo la diferencia entre una receta con <mark class="mark">AJI-NO-MOTO&#174; </mark>y una sin, para que vos mismo experimentes por qu&eacute; es <strong>"el secreto del sabor"</strong>. 
+                <span class="desafio__span2">TE ESPERAMOS EN:</span>
+            </p>
+            <div class="desafio__evento flex r10">
+                <div class="evento__elemento flex">
+                    <img src="img/ico-calendario.svg" class="evento__img" alt="">
+                    <span class="evento__span">Fecha </span>
+                    <span class="evento__span">XX/XX/XX</span>
+                </div>
+                <span class="solo-pc"> - </span>
+                <div class="evento__varios flex">
+                    <div class="evento__elemento flex">
+                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="">
+                        <span class="evento__span">Dirección del lugar </span>
+                        <span class="evento__span solo-pc"> a las </span>
+                    </div>
+                    <div class="evento__elemento flex">
+                        <img src="img/ico-horario.svg" class="evento__img solo-mobile" alt="">
+                        <span class="evento__span solo-mobile">Horario </span>
+                        <span class="evento__span">XX:XX  </span>
+                        <span class="evento__span solo-pc"> hs </span>
+                    </div>
+                </div>
+            </div>
+            <div class="desafio__evento flex r10">
+                <div class="evento__elemento flex">
+                    <img src="img/ico-calendario.svg" class="evento__img" alt="">
+                    <span class="evento__span">Fecha </span>
+                    <span class="evento__span">XX/XX/XX</span>
+                </div>
+                <span class="solo-pc"> - </span>
+                <div class="evento__varios flex">
+                    <div class="evento__elemento flex">
+                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="">
+                        <span class="evento__span">Dirección del lugar </span>
+                        <span class="evento__span solo-pc"> a las </span>
+                    </div>
+                    <div class="evento__elemento flex">
+                        <img src="img/ico-horario.svg" class="evento__img solo-mobile" alt="">
+                        <span class="evento__span solo-mobile">Horario </span>
+                        <span class="evento__span">XX:XX  </span>
+                        <span class="evento__span solo-pc"> hs </span>
+                    </div>
+                </div>
+            </div>
+           <div class="desafio__evento flex r10">
+                <div class="evento__elemento flex">
+                    <img src="img/ico-calendario.svg" class="evento__img" alt="">
+                    <span class="evento__span">Fecha </span>
+                    <span class="evento__span">XX/XX/XX</span>
+                </div>
+                <span class="solo-pc"> - </span>
+                <div class="evento__varios flex">
+                    <div class="evento__elemento flex">
+                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="">
+                        <span class="evento__span">Dirección del lugar </span>
+                        <span class="evento__span solo-pc"> a las </span>
+                    </div>
+                    <div class="evento__elemento flex">
+                        <img src="img/ico-horario.svg" class="evento__img solo-mobile" alt="">
+                        <span class="evento__span solo-mobile">Horario </span>
+                        <span class="evento__span">XX:XX  </span>
+                        <span class="evento__span solo-pc"> hs </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="premios rt10">
+            <p class="premios__p">Tambien podés participar por estos fabulosos premios con los que vas a poder probar esta experiencia de sabor en tu hogar. Solo tenes que completar los datos cliqueando en el botón que está debajo.</p>
+            
+            <div class="premios__contenedor flex">
+                <div class="premios__premio">
+                    <div class="premio__encabezado flex r10">
+                        <img src="img/ico-regalo.svg" alt="">
+                        Primer premio
+                    </div>
+                    <img class="premio__img" src="img/premio-1.webp" alt="">
+                </div>
+                <div class="premios__premio">
+                    <div class="premio__encabezado flex r10">
+                        <img src="img/ico-regalo.svg" alt="">
+                        Segundo premio
+                    </div>
+                    <img class="premio__img" src="img/premio-2.webp" alt="">
+                </div>
+            </div>
+            <buttton class="btn-participar">QUIERO PARTICIPAR</buttton>
+        </section>
+
+        <section class="cuadro" id="ajinomoto">
+            <div class="cuadro__img">
+                <picture class="">
+                    <source media="(max-width:768px)" srcset="img/cuadro1-mobile.webp">
+                    <img src="img/cuadro1.webp" alt="AJI-NO-MOTO el secreto del sabor" >
+                </picture>
+            </div>
+            <h2 class="cuadro__h2">
+                <span><mark class="mark">AJI-NO-MOTO&#174;</mark>,</span>
+                <span>EL SECRETO DEL SABOR</span>  
+            </h2>
+            <div class="cuadro__contenido" id="cuadro__contenido1">La verdad detrás del secreto del sabor es que en realidad... no hay ningún secreto. <span><mark class="mark">AJI-NO-MOTO&#174; </mark> </span> concentra la forma más pura de umami, el quinto sabor, y es utilizado por los chefs más prestigiosos del mundo, desde hace más de cien años, para sazonar las comidas, y realzar y potenciar los sabores de sus exquisiteces. Así que ahora que lo sabés, vos también podés trasformar tus comidas de siempre en platos extraordinarios.<span id="suspensivos1" class="suspensivos">...</span></div>
+           
+            <button id="mas1" class="btn-ver btn-vermas solo-mobile" onclick="extender_contenido('cuadro__contenido1','mas1','menos1','suspensivos1');"><img src="img/btn-vermas.png" alt="" ></button>
+
+            <button id="menos1" class="btn-ver btn-vermenos solo-mobile" style="display: none;" onclick="contraer_contenido('cuadro__contenido1','mas1','menos1','suspensivos1');"><img src="img/btn-vermenos.png" alt=""></button>
+           
+        </section>
+
+        <section class="cuadro">
+            <div class="cuadro__img">
+                <picture class="">
+                    <source media="(max-width:768px)" srcset="img/cuadro2-mobile.webp">
+                    <img src="img/cuadro2.webp" alt="¿QUÉ ES EL UMAMI?" >
+                </picture>
+
+            </div>
+            <h2 class="cuadro__h2">
+                <span>¿QUÉ ES EL UMAMI?</span>
+            </h2>
+            <div class="cuadro__contenido" id="cuadro__contenido2">Umami y <span><mark class="mark">AJI-NO-MOTO&#174; </mark></span> son dos caras de una misma moneda: ambas nos brindan la misma experiencia, un sabor completamente diferente del dulce, salado, ácido o amargo. El sabor umami podemos encontrarlo en variados alimentos como carnes rojas, champiñones, tomates, camarones, entre otros. Sin embargo, gracias a <span><mark class="mark">AJI-NO-MOTO&#174; </mark></span> podemos llevar ese sabor a nuestras salsas, caldos, sopas, pastas, carnes, vegetales y muchos alimentos más.¿Querés saber más acerca del quinto gusto? Ingresa aquí:
+                <a class="cuadro__link">
+                    <span>https://</span>
+                    <span>www.ajinomoto.com/es/</span>
+                    <span>umami</span>
+                </a>
+                <span id="suspensivos2" class="suspensivos">...</span>
+            </div>
+           
+            <button id="mas2" class="btn-ver btn-vermas solo-mobile" onclick="extender_contenido('cuadro__contenido2','mas2','menos2','suspensivos2');"><img src="img/btn-vermas.png" alt="" ></button>
+
+            <button id="menos2" class="btn-ver btn-vermenos solo-mobile" style="display: none;" onclick="contraer_contenido('cuadro__contenido2','mas2','menos2','suspensivos2');"><img src="img/btn-vermenos.png" alt=""></button>
+           
+        </section>
+
+        <section class="cuadro">
+            <div class="cuadro__img">
+                <picture class="destacado__img">
+                    <source media="(max-width:768px)" srcset="img/cuadro3-mobile.webp">
+                    <img src="img/cuadro3.webp" alt="AJI-NO-MOTO beneficios" >
+                </picture>
+
+            </div>
+            <h2 class="cuadro__h2">
+                <span>¿CUÁLES SON LOS BENEFICIOS</span>
+                <span>DE USAR <mark class="mark">AJI-NO-MOTO&#174;</mark>?</span>  
+            </h2>
+            <div class="cuadro__contenido" id="cuadro__contenido3">
+                <p>Con ½ cucharadita de <span><mark class="mark">AJI-NO-MOTO&#174; </mark></span>cada 500 g de alimento realzás el sabor natural de cualquier ingrediente salado.</p>
+                <p>Además, con <span><mark class="mark">AJI-NO-MOTO&#174; </mark></span>podés reducir hasta un 37% la ingesta de sodio.</p>
+                <p>¿Cómo? Simple, reemplazá: </p> 
+                <div class="cuadro__columnas flex">
+                    <div class="cuadro__col">
+                        <img src="img/cucharita.png" alt="cucharadita" class="col__img">
+                        <span>1 cucharadita</span>
+                        <span class="col__ingrediente">de sal</span>
+                    </div>
+                    <div class="cuadro__col-img"><img src="img/signo-x.svg" alt=""></div>
+                    <div class="cuadro__col">
+                        <img src="img/cucharita.png" alt="cucharadita" class="col__img">
+                        <span>1/2 cucharadita</span>
+                        <span class="col__ingrediente">de sal</span>
+                    </div>
+                    <div class="cuadro__col-img"><img src="img/signo+.svg" alt=""></div>
+                    <div class="cuadro__col">
+                        <img src="img/cucharita.png" alt="cucharadita" class="col__img">
+                        <span>1 cucharadita</span>
+                        <img src="img/aji-no-moto.svg" alt="">
+                        <span>por cada 500 g</span>
+                        <span>de alimento</span>
+                    </div>
+                    <span id="suspensivos3" class="suspensivos">...</span>
+                </div>
+                <h3 class="cuadro__h3">¡Te invitamos a probarlo!</h3>
+            </div>
+           
+            <button id="mas3" class="btn-ver btn-vermas solo-mobile" onclick="extender_contenido('cuadro__contenido3','mas3','menos3','suspensivos3');"><img src="img/btn-vermas.png" alt="" ></button>
+
+            <button id="menos3" class="btn-ver btn-vermenos solo-mobile" style="display: none;" onclick="contraer_contenido('cuadro__contenido3','mas3','menos3','suspensivos3');"><img src="img/btn-vermenos.png" alt=""></button>
+           
+        </section>
+
+        <section class="recetas" id="recetas">
+            <h3 class="cuadro__h3">Llevá EL SECRETO DEL SABOR a tu cocina</h3>
+            <p class="recetas__p">Descubrí algunas de las recetas que podés preparar con <mark class="mark">AJI-NO-MOTO&#174;</mark>.</p>
+            <div class="recetas__contenedor flex">
+                <div class="receta__cuadro">
+                    <div class="receta__video">
+                        <video preload="yes" autoplay loop muted playsinline webkit-playsinline x5-playsinline  poster="img/receta01.webp" class="r10">
+                            <source src="" type="video/mp4">
+                            Su navegador no reproduce videos.
+                        </video>
+                    </div>
+                    <p class="receta__p">Bifes a la criolla</p>
+                </div>
+                <div class="receta__cuadro">
+                    <div class="receta__video">
+                        <video preload="yes" autoplay loop muted playsinline webkit-playsinline x5-playsinline  poster="img/receta01.webp" >
+                            <source src="" type="video/mp4">
+                            Su navegador no reproduce videos.
+                        </video>
+                    </div>
+                    <p class="receta__p">Buñuelos de verdura</p>
+                </div>
+                <div class="receta__cuadro">
+                    <div class="receta__video">
+                        <video preload="yes" autoplay loop muted playsinline webkit-playsinline x5-playsinline  poster="img/receta01.webp" >
+                            <source src="" type="video/mp4">
+                            Su navegador no reproduce videos.
+                        </video>
+                    </div>
+                    <p class="receta__p">Bifes a la pomarola</p>
+                </div>
+                <div class="receta__cuadro">
+                    <div class="receta__video">
+                        <video preload="yes" autoplay loop muted playsinline webkit-playsinline x5-playsinline  poster="img/receta01.webp" >
+                            <source src="" type="video/mp4">
+                            Su navegador no reproduce videos.
+                        </video>
+                    </div>
+                    <p class="receta__p">Bifes a la criolla</p>
+                </div>
+                <div class="receta__cuadro">
+                    <div class="receta__video">
+                        <video preload="yes" autoplay loop muted playsinline webkit-playsinline x5-playsinline  poster="img/receta01.webp" >
+                            <source src="" type="video/mp4">
+                            Su navegador no reproduce videos.
+                        </video>
+                    </div>
+                    <p class="receta__p">Bifes a la criolla</p>
+                </div>
+                <div class="receta__cuadro">
+                    <div class="receta__video">
+                        <video preload="yes" autoplay loop muted playsinline webkit-playsinline x5-playsinline  poster="img/receta01.webp" >
+                            <source src="" type="video/mp4">
+                            Su navegador no reproduce videos.
+                        </video>
+                    </div>
+                    <p class="receta__p">Bifes a la criolla</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seguir r10">
+            <h2 class="seguir__h2">¿QUERÉS CONOCER MÁS SOBRE <span><mark class="mark">AJI-NO-MOTO&#174;</mark></span>?</h2>
+            <p class="seguir__p">Entonces te invitamos a seguirnos en nuestras redes:</p>
+            <div class="seguir__redes flex">
+                <a href="" class="redes__link"><img src="img/ico-instagram.webp" alt="Instagram"></a>
+                <a href="" class="redes__link"><img src="img/ico-facebook.webp" alt="Facebook"></a>
+                <a href="" class="redes__link"><img src="img/ico-youtube.webp" alt="Youtube"></a>
+            </div>
+            <div class="seguir__contenedor flex">
+                <a href="" class="seguir__receta">
+                    <img src="img/redes-receta1.webp" alt="Receta" class="receta__img">
+                </a>
+                <a href="" class="seguir__receta">
+                    <img src="img/redes-receta2.webp" alt="Receta" class="receta__img">
+                </a>
+                <a href="" class="seguir__receta">
+                    <img src="img/redes-receta3.webp" alt="Receta" class="receta__img">
+                </a>
+                <a href="" class="seguir__receta">
+                    <img src="img/redes-receta4.webp" alt="Receta" class="receta__img">
+                </a>
+                <a href="" class="seguir__receta">
+                    <img src="img/redes-receta5.webp" alt="Receta" class="receta__img">
+                </a>
+                <a href="" class="seguir__receta">
+                    <img src="img/redes-receta6.webp" alt="Receta" class="receta__img">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer flex rt10">
+        <div class="footer__links">
+            <h2 class="footer__h2">SOBRE <mark class="mark">AJI-NO-MOTO&#174; </mark></h2>
+            <hr class="footer__hr">
+            <a href="" class="footer__links-a">QU&Eacute; ES AJI-NO-MOTO</a>
+            <a href="" class="footer__links-a">SUMATE AL DESAF&Iacute;O</a>
+            <a href="" class="footer__links-a">RECETAS</a>
+        </div>
+        <div class="footer__redes">
+            <h2 class="w767max footer__h2">NUESTRAS REDES</h2>
+            <hr class="footer__hr">
+            <div class="footer__redes-links flex w767max">
+                <a href="" target="_blank"><img class="footer__redes-img" src="img/ico-instagram.webp" alt="Instagram Aji-no-moto"></a>
+                <a href="" target="_blank"><img class="footer__redes-img" src="img/ico-facebook.webp" alt="Facebook Aji-no-moto"></a>
+                <a href="" target="_blank"><img class="footer__redes-img" src="img/ico-youtube.webp" alt="Youtube Aji-no-moto"></a>
+            </div>
+        </div>
+        <div class="footer__logo flex">
+           <img src="img/logo-ajinomoto.svg" class="footer__logo-img" alt="Aji-no-moto">
+        </div>
+    </footer>
+
+    <script>
+
+        window.addEventListener('resize', function() {
+            document.getElementsByClassName("header__nav")[0].classList.remove('d-block');
+
+            if (screen.width < 1100) {
+                opacar(0);
+            } else {
+                const elementos = document.querySelectorAll('.desafio__evento');
+                opacar(elementos.length);
+            }
+
+            if (screen.width < 768) {
+                const contenido = document.getElementsByClassName('cuadro__contenido');
+                for (let i = 0; i < contenido.length; i++) {
+                    contenido[i].style.height = "120px";  
+                }
+                const suspen = document.getElementsByClassName('suspensivos'); 
+                for (let i = 0; i < contenido.length; i++) {
+                    suspen[i].style.display = "block"; 
+                }
+                $('.btn-vermas').css('display', 'block');
+                $('.btn-vermenos').css('display', 'none');
+
+             } else {
+                const contenido = document.getElementsByClassName('cuadro__contenido');
+                for (let i = 0; i < contenido.length; i++) {
+                    contenido[i].style.height = "max-content";  
+                }
+                const suspen = document.getElementsByClassName('suspensivos'); 
+                for (let i = 0; i < contenido.length; i++) {
+                    suspen[i].style.display = "none"; 
+                }
+                $('.btn-vermas').css('display', 'none');
+                $('.btn-vermenos').css('display', 'none');
+             }
+            
+        });
+
+        $(document).ready(function(){
+            $('.galeria').slick({
+                dots: true,
+                arrows:false,
+                infinite: true,
+                autoplay: true,
+                speed: 1000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                customPaging:function(slider,index){var num=index+1;return '<div class="dot"></div>'}
+            });
+            if($('.galeria ul li').length<2){$('.galeria ul').hide()};
+
+            var ico_menu = document.getElementById("ico-menu");
+            ico_menu.onclick = () => {
+                var nav_bar = document.getElementsByClassName("header__nav")[0];
+                nav_bar.classList.toggle('d-block');
+            };
+
+            if (screen.width < 1100) {
+                opacar(0);
+            } else {
+                const elementos = document.querySelectorAll('.desafio__evento');
+                opacar(elementos.length);
+            }
+        
+            
+        });
+
+        function extender_contenido(cuadro__contenido,boton_mas,boton_menos,suspensivos) {
+            const contenido = document.getElementById(cuadro__contenido);
+            const verMasBtn = document.getElementById(boton_mas);
+            const verMenosBtn = document.getElementById(boton_menos);
+            const suspen = document.getElementById(suspensivos);
+
+            contenido.style.height = "max-content";
+            verMasBtn.style.display = "none";
+            verMenosBtn.style.display = "block";
+            suspen.style.display = "none";
+        }
+
+        function contraer_contenido(cuadro__contenido,boton_mas,boton_menos,suspensivos) {
+            const contenido = document.getElementById(cuadro__contenido);
+            const verMasBtn = document.getElementById(boton_mas);
+            const verMenosBtn = document.getElementById(boton_menos);
+            const suspen = document.getElementById(suspensivos);
+
+            contenido.style.height = "120px"; 
+            verMasBtn.style.display = "block";
+            verMenosBtn.style.display = "none";
+            suspen.style.display = "block";
+        }
+
+        function opacar(index) {
+            const elementos = document.querySelectorAll('.desafio__evento');
+
+            for (let i = 1; i < elementos.length; i++) {
+                if (i <= index) {
+                    elementos[i].style.opacity = 1;
+                } else {
+                    elementos[i].style.opacity = 0.66;
+                }
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
