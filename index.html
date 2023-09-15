@@ -348,6 +348,56 @@
         </div>
     </footer>
 
+    <div id="popup-participar" class="" >
+        <!-- style="display:none;" -->
+        <div class="cuerpo-participar flex" >
+            <div class="img-participar" >
+                <p><button onclick="$('#popup-participar').hide();" name="Cerrar"><img src="img/btn-cerrar-mobile.png" alt="Cerrar popup participar" width="12" height="12"></button></p>
+            </div>
+            <div class="texto-participar">
+                <p class="p-cerrar"><button onclick="$('#popup-participar').hide();" name="Cerrar"><img src="img/btn-cerrar.webp" alt="Cerrar popup " width="12" height="12"></button></p>
+
+                <div class="p-titulo"><p>¿Querés descubrir el secreto del sabor y participar por increíbles premios?</p> </div>
+                
+
+                <form id="subscriptionform" action="" class="form_content parsley js_form_validation">
+                    <label for="nom">Nombre</label>
+                    <input type="text" name="nom" id="su_nom" placeholder="Escribe tu nombre" 
+                                data-parsley-required-message= "Debes completar este campo"
+                                data-parsley-required 
+                    >
+                    <label for="ape">Apellido</label>
+                    <input type="text" name="ape" id="su_ape" placeholder="Escribe tu apellido" 
+                                data-parsley-required-message= "Debes completar este campo"
+                                data-parsley-required 
+                    >
+                    <label for="dni">DNI</label>
+                    <input type="number" name="dni" id="su_dni" placeholder="Escribe tu DNI" 
+                                data-parsley-required-message= "Debes completar este campo"
+                                data-parsley-required 
+                    >
+                    <label for="tel">Teléfono de contacto</label>
+                    <input type="number" name="tel" id="su_tel" placeholder="Escribe tu telefono" 	
+                                data-parsley-trigger="change"
+                                data-parsley-required-message= "Debes completar este campo"
+                                data-parsley-type-message= "Debes ingresar un mail válido."
+                                data-parsley-required 
+                    >
+                    <label for="eml">Mail</label>
+                    <input type="email" name="eml" id="su_eml" placeholder="Escribe tu mail" 	
+                                data-parsley-trigger="change"
+                                data-parsley-required-message= "Debes completar este campo"
+                                data-parsley-type-message= "Debes ingresar un mail válido."
+                                data-parsley-required 
+                    >
+                    <input id="botonparticipar" type="submit" value="PARTICIPAR" onclick="validarSuscripcion(); return 0;">
+                    <div id="resultadosuscripcion"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <script>
 
         window.addEventListener('resize', function() {
