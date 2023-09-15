@@ -13,6 +13,7 @@
     <script src="js/jQuery3.6.4.js"></script>
     <script src="js/slick.min.js"></script>
 
+    <!-- precargar las imagenes de los sliders (solo si son pocas) en especial las mobile -->
     <link rel="preload" href="img/principal.webp" as="image" />
 
     <title>Aji-no-moto</title>
@@ -20,7 +21,7 @@
 <body>
     <header class="header flex">
             <div class="header__principal">
-                <img src="img/logo-ajinomoto.svg" alt=" " title=" " class="header__logo" width="99" height="72">
+                <img src="img/logo-ajinomoto.svg" alt="Logo AJI-NO-MOTO" title=" " class="header__logo" width="99" height="72">
                 <img id="ico-menu" src="img/ico-menu.svg" alt="Menú" width="24" height="16" class="header__menu">
             </div>
             <nav class="header__nav">
@@ -34,9 +35,22 @@
     <main class="main">
         <h1>AJI-NO-MOTO</h1>
         <div class="galeria">
-            <img src="img/slider-desktop.webp" alt="Aji-no-moto el secreto del sabor">
-            <img src="img/slider-desktop.webp" alt="Aji-no-moto el secreto del sabor">
-        </div> 
+            <div class="galeria-pc">
+                <div class="galeria1">
+                    <img src="img/slider-desktop.webp" alt="Aji-no-moto el secreto del sabor">
+                    <img src="img/slider-desktop.webp" alt="Aji-no-moto el secreto del sabor">
+                </div> 
+            </div>
+
+            <div class="galeria-mobile">
+                <div class="galeria2">
+                    <img src="img/slider-mobile.webp" alt="Aji-no-moto el secreto del sabor">
+                    <img src="img/slider-mobile.webp" alt="Aji-no-moto el secreto del sabor">
+                    <img src="img/slider-mobile.webp" alt="Aji-no-moto el secreto del sabor">
+                </div> 
+            </div>
+        </div>
+
         <section class="desafio rt10" id="sumate">
             <p class="desafio__texto">
                 ¿Ya descubriste el secreto del sabor? Ven&iacute; a ponerlo a prueba.
@@ -44,117 +58,117 @@
             </p>
             <div class="desafio__video rt10 ">
                 <video preload="yes" autoplay loop muted playsinline webkit-playsinline x5-playsinline   poster="img/video-encabezado.webp" class="rt10">
-                    <source src="" type="video/mp4">
+                    <source src="img/video-presentacion.mp4" type="video/mp4">
                     Su navegador no reproduce videos.
                 </video>
             </div>
             <p class="desafio__texto desafio__texto2">
-                Particip&aacute; del <strong>#Desaf&iacute;oAjinomoto</strong>. Podr&aacute;s probar all&iacute; mismo la diferencia entre una receta con <mark class="mark">AJI-NO-MOTO&#174; </mark>y una sin, para que vos mismo experimentes por qu&eacute; es <strong>"el secreto del sabor"</strong>. 
+                Particip&aacute; del <strong>#Desaf&iacute;oAjinomoto</strong>. Podr&aacute;s probar en el lugar la diferencia entre una receta con <mark class="mark">AJI-NO-MOTO&#174; </mark>y una sin, para que vos mismo experimentes por qu&eacute; es <strong>"el secreto del sabor"</strong>. 
                 <span class="desafio__span2">TE ESPERAMOS EN:</span>
             </p>
             <div class="desafio__evento flex r10">
                 <div class="evento__elemento flex">
-                    <img src="img/ico-calendario.svg" class="evento__img" alt="">
+                    <img src="img/ico-calendario.svg" class="evento__img" alt="Fecha del evento">
                     <span class="evento__span">Fecha </span>
                     <span class="evento__span">XX/XX/XX</span>
                 </div>
-                <span class="solo-pc"> - </span>
+                <span class="solo-pc1100"> - </span>
                 <div class="evento__varios flex">
                     <div class="evento__elemento flex">
-                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="">
+                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="Direccion del evento">
                         <span class="evento__span">Dirección del lugar </span>
-                        <span class="evento__span solo-pc"> a las </span>
+                        <span class="evento__span solo-pc1100"> a las </span>
                     </div>
                     <div class="evento__elemento flex">
-                        <img src="img/ico-horario.svg" class="evento__img solo-mobile" alt="">
-                        <span class="evento__span solo-mobile">Horario </span>
+                        <img src="img/ico-horario.svg" class="evento__img solo-mobile1100" alt="Horario del evento">
+                        <span class="evento__span solo-mobile1100">Horario </span>
                         <span class="evento__span">XX:XX  </span>
-                        <span class="evento__span solo-pc"> hs </span>
+                        <span class="evento__span solo-pc1100"> hs </span>
                     </div>
                 </div>
             </div>
             <div class="desafio__evento flex r10">
                 <div class="evento__elemento flex">
-                    <img src="img/ico-calendario.svg" class="evento__img" alt="">
+                    <img src="img/ico-calendario.svg" class="evento__img" alt="Fecha del evento">
                     <span class="evento__span">Fecha </span>
                     <span class="evento__span">XX/XX/XX</span>
                 </div>
-                <span class="solo-pc"> - </span>
+                <span class="solo-pc1100"> - </span>
                 <div class="evento__varios flex">
                     <div class="evento__elemento flex">
-                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="">
+                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="Direccion del evento">
                         <span class="evento__span">Dirección del lugar </span>
-                        <span class="evento__span solo-pc"> a las </span>
+                        <span class="evento__span solo-pc1100"> a las </span>
                     </div>
                     <div class="evento__elemento flex">
-                        <img src="img/ico-horario.svg" class="evento__img solo-mobile" alt="">
-                        <span class="evento__span solo-mobile">Horario </span>
+                        <img src="img/ico-horario.svg" class="evento__img solo-mobile1100" alt="Horario del evento">
+                        <span class="evento__span solo-mobile1100">Horario </span>
                         <span class="evento__span">XX:XX  </span>
-                        <span class="evento__span solo-pc"> hs </span>
+                        <span class="evento__span solo-pc1100"> hs </span>
                     </div>
                 </div>
             </div>
             <div class="desafio__evento flex r10">
                 <div class="evento__elemento flex">
-                    <img src="img/ico-calendario.svg" class="evento__img" alt="">
+                    <img src="img/ico-calendario.svg" class="evento__img" alt="Fecha del evento">
                     <span class="evento__span">Fecha </span>
                     <span class="evento__span">XX/XX/XX</span>
                 </div>
-                <span class="solo-pc"> - </span>
+                <span class="solo-pc1100"> - </span>
                 <div class="evento__varios flex">
                     <div class="evento__elemento flex">
-                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="">
+                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="Direccion del evento">
                         <span class="evento__span">Dirección del lugar </span>
-                        <span class="evento__span solo-pc"> a las </span>
+                        <span class="evento__span solo-pc1100"> a las </span>
                     </div>
                     <div class="evento__elemento flex">
-                        <img src="img/ico-horario.svg" class="evento__img solo-mobile" alt="">
-                        <span class="evento__span solo-mobile">Horario </span>
+                        <img src="img/ico-horario.svg" class="evento__img solo-mobile1100" alt="Horario del evento">
+                        <span class="evento__span solo-mobile1100">Horario </span>
                         <span class="evento__span">XX:XX  </span>
-                        <span class="evento__span solo-pc"> hs </span>
+                        <span class="evento__span solo-pc1100"> hs </span>
                     </div>
                 </div>
             </div>
            <div class="desafio__evento flex r10">
                 <div class="evento__elemento flex">
-                    <img src="img/ico-calendario.svg" class="evento__img" alt="">
+                    <img src="img/ico-calendario.svg" class="evento__img" alt="Fecha del evento">
                     <span class="evento__span">Fecha </span>
                     <span class="evento__span">XX/XX/XX</span>
                 </div>
-                <span class="solo-pc"> - </span>
+                <span class="solo-pc1100"> - </span>
                 <div class="evento__varios flex">
                     <div class="evento__elemento flex">
-                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="">
+                        <img src="img/ico-ubicacion.svg" class="evento__img" alt="Direccion del evento">
                         <span class="evento__span">Dirección del lugar </span>
-                        <span class="evento__span solo-pc"> a las </span>
+                        <span class="evento__span solo-pc1100"> a las </span>
                     </div>
                     <div class="evento__elemento flex">
-                        <img src="img/ico-horario.svg" class="evento__img solo-mobile" alt="">
-                        <span class="evento__span solo-mobile">Horario </span>
+                        <img src="img/ico-horario.svg" class="evento__img solo-mobile1100" alt="Horario del evento">
+                        <span class="evento__span solo-mobile1100">Horario </span>
                         <span class="evento__span">XX:XX  </span>
-                        <span class="evento__span solo-pc"> hs </span>
+                        <span class="evento__span solo-pc1100"> hs </span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="premios rt10">
-            <p class="premios__p">Tambien podés participar por estos fabulosos premios con los que vas a poder probar esta experiencia de sabor en tu hogar. Solo tenes que completar los datos cliqueando en el botón que está debajo.</p>
+            <p class="premios__p">También podés participar por estos fabulosos premios con los que vas a poder probar esta experiencia de sabor en tu hogar. Solo tenes que completar los datos cliqueando en el botón que está debajo.</p>
             
             <div class="premios__contenedor flex">
                 <div class="premios__premio">
                     <div class="premio__encabezado flex r10">
-                        <img src="img/ico-regalo.svg" alt="">
+                        <img src="img/ico-regalo.svg" alt="Premio">
                         Primer premio
                     </div>
-                    <img class="premio__img" src="img/premio-1.webp" alt="">
+                    <img class="premio__img" src="img/premio-1.webp" alt="Premio">
                 </div>
                 <div class="premios__premio">
                     <div class="premio__encabezado flex r10">
-                        <img src="img/ico-regalo.svg" alt="">
+                        <img src="img/ico-regalo.svg" alt="Premio">
                         Segundo premio
                     </div>
-                    <img class="premio__img" src="img/premio-2.webp" alt="">
+                    <img class="premio__img" src="img/premio-2.webp" alt="Premio">
                 </div>
             </div>
             <buttton class="btn-participar" onclick="$('#popup__participar').show();" >QUIERO PARTICIPAR</buttton>
@@ -173,9 +187,9 @@
             </h2>
             <div class="cuadro__contenido" id="cuadro__contenido1">La verdad detrás del secreto del sabor es que en realidad... no hay ningún secreto. <span><mark class="mark">AJI-NO-MOTO&#174; </mark> </span> concentra la forma más pura de umami, el quinto sabor, y es utilizado por los chefs más prestigiosos del mundo, desde hace más de cien años, para sazonar las comidas, y realzar y potenciar los sabores de sus exquisiteces. Así que ahora que lo sabés, vos también podés trasformar tus comidas de siempre en platos extraordinarios.<span id="suspensivos1" class="suspensivos">...</span></div>
            
-            <button id="mas1" class="btn-ver btn-vermas solo-mobile" onclick="extender_contenido('cuadro__contenido1','mas1','menos1','suspensivos1');"><img src="img/btn-vermas.png" alt="" ></button>
+            <button id="mas1" class="btn-ver btn-vermas solo-mobile767" onclick="extender_contenido('cuadro__contenido1','mas1','menos1','suspensivos1');"><img src="img/btn-vermas.png" alt="Boton Ver Mas" ></button>
 
-            <button id="menos1" class="btn-ver btn-vermenos solo-mobile" style="display: none;" onclick="contraer_contenido('cuadro__contenido1','mas1','menos1','suspensivos1');"><img src="img/btn-vermenos.png" alt=""></button>
+            <button id="menos1" class="btn-ver btn-vermenos solo-mobile767" style="display: none;" onclick="contraer_contenido('cuadro__contenido1','mas1','menos1','suspensivos1');"><img src="img/btn-vermenos.png" alt="Boton Ver Menos"></button>
            
         </section>
 
@@ -191,17 +205,15 @@
                 <span>¿QUÉ ES EL UMAMI?</span>
             </h2>
             <div class="cuadro__contenido" id="cuadro__contenido2">Umami y <span><mark class="mark">AJI-NO-MOTO&#174; </mark></span> son dos caras de una misma moneda: ambas nos brindan la misma experiencia, un sabor completamente diferente del dulce, salado, ácido o amargo. El sabor umami podemos encontrarlo en variados alimentos como carnes rojas, champiñones, tomates, camarones, entre otros. Sin embargo, gracias a <span><mark class="mark">AJI-NO-MOTO&#174; </mark></span> podemos llevar ese sabor a nuestras salsas, caldos, sopas, pastas, carnes, vegetales y muchos alimentos más.¿Querés saber más acerca del quinto gusto? Ingresa aquí:
-                <a class="cuadro__link">
-                    <span>https://</span>
-                    <span>www.ajinomoto.com/es/</span>
-                    <span>umami</span>
+                <a href="https://www.ajinomoto.com/es/umami" class="cuadro__link " target="_blank">
+                    <span>https://</span><span>www.ajinomoto.com/es/</span><span>umami</span>
                 </a>
                 <span id="suspensivos2" class="suspensivos">...</span>
             </div>
            
-            <button id="mas2" class="btn-ver btn-vermas solo-mobile" onclick="extender_contenido('cuadro__contenido2','mas2','menos2','suspensivos2');"><img src="img/btn-vermas.png" alt="" ></button>
+            <button id="mas2" class="btn-ver btn-vermas solo-mobile767" onclick="extender_contenido('cuadro__contenido2','mas2','menos2','suspensivos2');"><img src="img/btn-vermas.png" alt="Boton Ver Mas" ></button>
 
-            <button id="menos2" class="btn-ver btn-vermenos solo-mobile" style="display: none;" onclick="contraer_contenido('cuadro__contenido2','mas2','menos2','suspensivos2');"><img src="img/btn-vermenos.png" alt=""></button>
+            <button id="menos2" class="btn-ver btn-vermenos solo-mobile767" style="display: none;" onclick="contraer_contenido('cuadro__contenido2','mas2','menos2','suspensivos2');"><img src="img/btn-vermenos.png" alt="Boton Ver Menos"></button>
            
         </section>
 
@@ -211,7 +223,6 @@
                     <source media="(max-width:768px)" srcset="img/cuadro3-mobile.webp">
                     <img src="img/cuadro3.webp" alt="AJI-NO-MOTO beneficios" >
                 </picture>
-
             </div>
             <h2 class="cuadro__h2">
                 <span>¿CUÁLES SON LOS BENEFICIOS</span>
@@ -227,17 +238,17 @@
                         <span>1 cucharadita</span>
                         <span class="col__ingrediente">de sal</span>
                     </div>
-                    <div class="cuadro__col-img"><img src="img/signo-x.svg" alt=""></div>
+                    <div class="cuadro__col-img"><img src="img/signo-x.svg" alt="Reemplazar"></div>
                     <div class="cuadro__col">
                         <img src="img/cucharita.png" alt="cucharadita" class="col__img">
                         <span>1/2 cucharadita</span>
                         <span class="col__ingrediente">de sal</span>
                     </div>
-                    <div class="cuadro__col-img"><img src="img/signo+.svg" alt=""></div>
+                    <div class="cuadro__col-img"><img src="img/signo+.svg" alt="Agregar"></div>
                     <div class="cuadro__col">
                         <img src="img/cucharita.png" alt="cucharadita" class="col__img">
                         <span>1 cucharadita</span>
-                        <img src="img/aji-no-moto.svg" alt="">
+                        <img src="img/aji-no-moto.svg" alt="Aji-no-moto">
                         <span>por cada 500 g</span>
                         <span>de alimento</span>
                     </div>
@@ -246,9 +257,9 @@
                 <h3 class="cuadro__h3">¡Te invitamos a probarlo!</h3>
             </div>
            
-            <button id="mas3" class="btn-ver btn-vermas solo-mobile" onclick="extender_contenido('cuadro__contenido3','mas3','menos3','suspensivos3');"><img src="img/btn-vermas.png" alt="" ></button>
+            <button id="mas3" class="btn-ver btn-vermas solo-mobile767" onclick="extender_contenido('cuadro__contenido3','mas3','menos3','suspensivos3');"><img src="img/btn-vermas.png" alt="Boton Ver Mas" ></button>
 
-            <button id="menos3" class="btn-ver btn-vermenos solo-mobile" style="display: none;" onclick="contraer_contenido('cuadro__contenido3','mas3','menos3','suspensivos3');"><img src="img/btn-vermenos.png" alt=""></button>
+            <button id="menos3" class="btn-ver btn-vermenos solo-mobile767" style="display: none;" onclick="contraer_contenido('cuadro__contenido3','mas3','menos3','suspensivos3');"><img src="img/btn-vermenos.png" alt="Boton Ver Menos"></button>
            
         </section>
 
@@ -258,6 +269,7 @@
             <div class="recetas__contenedor flex">
                 <div class="receta__cuadro">
                     <div class="receta__video">
+                        <!-- importante: no poner valores wn width ni height -->
                         <iframe width="" height="" src="https://www.youtube.com/embed/0AyPxO39U8s?si=Sb9fWGDx9V6tSIT5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <p class="receta__p">Bifes a la criolla</p>
@@ -299,27 +311,28 @@
             <h2 class="seguir__h2">¿QUERÉS CONOCER MÁS SOBRE <span><mark class="mark">AJI-NO-MOTO&#174;</mark></span>?</h2>
             <p class="seguir__p">Entonces te invitamos a seguirnos en nuestras redes:</p>
             <div class="seguir__redes flex">
-                <a href="" class="redes__link"><img src="img/ico-instagram.webp" alt="Instagram"></a>
-                <a href="" class="redes__link"><img src="img/ico-facebook.webp" alt="Facebook"></a>
-                <a href="" class="redes__link"><img src="img/ico-youtube.webp" alt="Youtube"></a>
+                <a href="https://www.instagram.com/ajinomotoargentina/" class="redes__link" target="_blank"><img src="img/ico-instagram.webp" alt="Instagram"></a>
+                <a href="https://www.facebook.com/ajinomotoargentina" class="redes__link" target="_blank"><img src="img/ico-facebook.webp" alt="Facebook"></a>
+                <a href="https://www.youtube.com/@AjinomotoArgentina" class="redes__link" target="_blank"><img src="img/ico-youtube.webp" alt="Youtube"></a>
             </div>
             <div class="seguir__contenedor flex">
-                <a href="" class="seguir__receta">
+                <a href="https://www.instagram.com/reel/CxN3zyUt2Ti/?utm_source=ig_web_copy_link" class="seguir__receta" target="_blank">
+                    <!-- miniatura del video de Instagram -->
                     <img src="img/redes-receta1.webp" alt="Receta" class="receta__img">
                 </a>
-                <a href="" class="seguir__receta">
+                <a href="https://www.instagram.com/reel/CxIyGyeyU5M/?utm_source=ig_web_copy_link" class="seguir__receta" target="_blank">
                     <img src="img/redes-receta2.webp" alt="Receta" class="receta__img">
                 </a>
-                <a href="" class="seguir__receta">
+                <a href="https://www.instagram.com/p/Cw8fgXhNeV8/?utm_source=ig_web_copy_link" class="seguir__receta" target="_blank">
                     <img src="img/redes-receta3.webp" alt="Receta" class="receta__img">
                 </a>
-                <a href="" class="seguir__receta">
+                <a href="https://www.instagram.com/p/Cw0PW2uMPof/?utm_source=ig_web_copy_link" class="seguir__receta" target="_blank">
                     <img src="img/redes-receta4.webp" alt="Receta" class="receta__img">
                 </a>
-                <a href="" class="seguir__receta">
+                <a href="https://www.instagram.com/p/CwxjeT3tJP6/?utm_source=ig_web_copy_link" class="seguir__receta" target="_blank">
                     <img src="img/redes-receta5.webp" alt="Receta" class="receta__img">
                 </a>
-                <a href="" class="seguir__receta">
+                <a href="https://www.instagram.com/reel/Cwqi4lqte0a/?utm_source=ig_web_copy_link" class="seguir__receta" target="_blank">
                     <img src="img/redes-receta6.webp" alt="Receta" class="receta__img">
                 </a>
             </div>
@@ -330,17 +343,17 @@
         <div class="footer__links">
             <h2 class="footer__h2">SOBRE <mark class="mark">AJI-NO-MOTO&#174; </mark></h2>
             <hr class="footer__hr">
-            <a href="" class="footer__links-a">QU&Eacute; ES AJI-NO-MOTO</a>
-            <a href="" class="footer__links-a">SUMATE AL DESAF&Iacute;O</a>
-            <a href="" class="footer__links-a">RECETAS</a>
+            <a href="#ajinomoto" class="footer__links-a">QU&Eacute; ES AJI-NO-MOTO</a>
+            <a href="#sumate" class="footer__links-a">SUMATE AL DESAF&Iacute;O</a>
+            <a href="#recetas" class="footer__links-a">RECETAS</a>
         </div>
         <div class="footer__redes">
             <h2 class="w767max footer__h2">NUESTRAS REDES</h2>
             <hr class="footer__hr">
             <div class="footer__redes-links flex w767max">
-                <a href="" target="_blank"><img class="footer__redes-img" src="img/ico-instagram.webp" alt="Instagram Aji-no-moto"></a>
-                <a href="" target="_blank"><img class="footer__redes-img" src="img/ico-facebook.webp" alt="Facebook Aji-no-moto"></a>
-                <a href="" target="_blank"><img class="footer__redes-img" src="img/ico-youtube.webp" alt="Youtube Aji-no-moto"></a>
+                <a href="https://www.instagram.com/ajinomotoargentina/" target="_blank"><img class="footer__redes-img" src="img/ico-instagram.webp" alt="Instagram Aji-no-moto"></a>
+                <a href="https://www.facebook.com/ajinomotoargentina" target="_blank"><img class="footer__redes-img" src="img/ico-facebook.webp" alt="Facebook Aji-no-moto"></a>
+                <a href="https://www.youtube.com/@AjinomotoArgentina" target="_blank"><img class="footer__redes-img" src="img/ico-youtube.webp" alt="Youtube Aji-no-moto"></a>
             </div>
         </div>
         <div class="footer__logo flex">
@@ -349,7 +362,6 @@
     </footer>
 
     <div id="popup__participar" class="" style="display: none;">
-        <!-- style="display:none;" -->
         <div class="cuerpo-participar flex" >
             <div class="img-participar" >
                 <p><button onclick="$('#popup__participar').hide();" name="Cerrar"><img src="img/btn-cerrar-mobile.png" alt="Cerrar popup participar" width="12" height="12"></button></p>
@@ -360,38 +372,19 @@
                 <div class="p-titulo"><p>¿Querés descubrir el secreto del sabor y participar por increíbles premios?</p> </div>
                 
 
-                <form id="subscriptionform" action="" class="form_content parsley js_form_validation">
+                <form id="participarform" action="" class="form_content">
                     <label for="nom">Nombre</label>
-                    <input type="text" name="nom" id="su_nom" placeholder="Escribe tu nombre" 
-                                data-parsley-required-message= "Debes completar este campo"
-                                data-parsley-required 
-                    >
+                    <input type="text" name="nom" id="su_nom" placeholder="Escribe tu nombre" required>
                     <label for="ape">Apellido</label>
-                    <input type="text" name="ape" id="su_ape" placeholder="Escribe tu apellido" 
-                                data-parsley-required-message= "Debes completar este campo"
-                                data-parsley-required 
-                    >
+                    <input type="text" name="ape" id="su_ape" placeholder="Escribe tu apellido" required>
                     <label for="dni">DNI</label>
-                    <input type="number" name="dni" id="su_dni" placeholder="Escribe tu DNI" 
-                                data-parsley-required-message= "Debes completar este campo"
-                                data-parsley-required 
-                    >
+                    <input type="number" name="dni" id="su_dni" placeholder="Escribe tu DNI" required>
                     <label for="tel">Teléfono de contacto</label>
-                    <input type="number" name="tel" id="su_tel" placeholder="Escribe tu telefono" 	
-                                data-parsley-trigger="change"
-                                data-parsley-required-message= "Debes completar este campo"
-                                data-parsley-type-message= "Debes ingresar un mail válido."
-                                data-parsley-required 
-                    >
+                    <input type="number" name="tel" id="su_tel" placeholder="Escribe tu telefono"  required>
                     <label for="eml">Mail</label>
-                    <input type="email" name="eml" id="su_eml" placeholder="Escribe tu mail" 	
-                                data-parsley-trigger="change"
-                                data-parsley-required-message= "Debes completar este campo"
-                                data-parsley-type-message= "Debes ingresar un mail válido."
-                                data-parsley-required 
-                    >
-                    <input id="botonparticipar" type="submit" value="PARTICIPAR" onclick="$('#popup__participar').hide();validarSuscripcion(); return 0;">
-                    <div id="resultadosuscripcion"></div>
+                    <input type="email" name="eml" id="su_eml" placeholder="Escribe tu mail" required>
+                    <input id="botonparticipar" type="submit" value="PARTICIPAR" >
+                    <div id="resultado"></div>
                 </form>
             </div>
         </div>
@@ -411,26 +404,14 @@
             }
 
             if (screen.width < 768) {
-                const contenido = document.getElementsByClassName('cuadro__contenido');
-                for (let i = 0; i < contenido.length; i++) {
-                    contenido[i].style.height = "120px";  
-                }
-                const suspen = document.getElementsByClassName('suspensivos'); 
-                for (let i = 0; i < contenido.length; i++) {
-                    suspen[i].style.display = "block"; 
-                }
+                $('.cuadro__contenido').css('height', '120px');
+                $('.suspensivos').css('display', 'block');
                 $('.btn-vermas').css('display', 'block');
                 $('.btn-vermenos').css('display', 'none');
 
              } else {
-                const contenido = document.getElementsByClassName('cuadro__contenido');
-                for (let i = 0; i < contenido.length; i++) {
-                    contenido[i].style.height = "max-content";  
-                }
-                const suspen = document.getElementsByClassName('suspensivos'); 
-                for (let i = 0; i < contenido.length; i++) {
-                    suspen[i].style.display = "none"; 
-                }
+                $('.cuadro__contenido').css('height', 'max-content');
+                $('.suspensivos').css('display', 'none');
                 $('.btn-vermas').css('display', 'none');
                 $('.btn-vermenos').css('display', 'none');
              }
@@ -438,7 +419,7 @@
         });
 
         $(document).ready(function(){
-            $('.galeria').slick({
+            $('.galeria1').slick({
                 dots: true,
                 arrows:false,
                 infinite: true,
@@ -449,7 +430,20 @@
                 adaptiveHeight: true,
                 customPaging:function(slider,index){var num=index+1;return '<div class="dot"></div>'}
             });
-            if($('.galeria ul li').length<2){$('.galeria ul').hide()};
+            if($('.galeria1 ul li').length<2){$('.galeria1 ul').hide()};
+
+            $('.galeria2').slick({
+                dots: true,
+                arrows:false,
+                infinite: true,
+                autoplay: true,
+                speed: 1000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                customPaging:function(slider,index){var num=index+1;return '<div class="dot"></div>'}
+            });
+            if($('.galeria2 ul li').length<2){$('.galeria2 ul').hide()};
 
             var ico_menu = document.getElementById("ico-menu");
             ico_menu.onclick = () => {
