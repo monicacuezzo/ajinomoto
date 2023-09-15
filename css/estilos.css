@@ -17,6 +17,7 @@ html{-webkit-box-sizing:border-box;box-sizing:border-box;margin: 0;padding: 0;sc
 html, body {-ms-scroll-chaining: none;overscroll-behavior: none;}
 body,section,div,nav,p,h1,h2,h3,h4,h5,h6,button,a,select,input{font-family:Poppins,sans-serif;}
 select, a, button, input{-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 0;text-transform: uppercase;}
+input{text-transform: none;}
 a{-webkit-appearance: none;-moz-appearance: none;appearance: none; background:transparent;border:none;outline:0;-webkit-box-shadow:none;box-shadow:none;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: pointer;text-decoration: none;text-transform: none;display: block;}
 button{-webkit-appearance: none;-moz-appearance: none;appearance: none; border: none; background: transparent;outline: 0;-webkit-box-shadow: none;box-shadow: none;}
 img{display: block;}
@@ -392,10 +393,61 @@ h2{font-weight: 600;}
     top: 0;
     left: 0;
 }
-/* h2 span{
-    white-space: nowrap;
-} */
+ 
 
+/* POPUP PARTICIPAR */
+#popup-participar{
+    display:block;
+    text-align: center;
+    position:fixed;top:0;left:0;bottom:0;z-index:5000;width:100vw;background-color:rgba(0,0,0,.6);overflow-y:scroll; 
+}
+#popup-participar button{ border:none;outline:0;-webkit-box-shadow:none;box-shadow:none;padding:0;}
+/* #popup-participar button img{margin:0;} */
+.cuerpo-participar{background-color:#fff; width:700px;height:677px; 
+position: absolute;top: 20px; left: 50%;transform: translateX(-50%);}
+.img-participar{width:50%;background:url(../img/popup-participacion-desktop.webp) no-repeat;background-size:cover;background-position:center center;position:relative;}
+.img-participar p{display:none;position:absolute;top:0;left:0;text-align:right;padding:7px;background-color:transparent;width:100%;}
+/* .img-participar p button{background:#ED1C24;width:25px;height:25px;border-radius:25px;} */
+.img-participar button img{width:12px;margin-bottom:2px;}
+.texto-participar{width:50%;position: relative;}
+.texto-participar button img{width:16px; height: 16px;}
+#popup-participar button.mobile{background-color:#fff;width:25px;height:25px;position:absolute;top:0;left:0;}
+.texto-participar p.p-cerrar{right: 5px;
+    top: 5px;
+    z-index: 200000;
+    padding: 0; position: absolute;}
+.texto-participar div.p-titulo{background-color:#ED1C24;padding:0;height: 110px;text-align: center;display: flex;align-items: center;justify-content: center;    line-height: 24px;}
+.texto-participar p{color:#2E0049;font-size:16px;font-weight:600;padding:5px 20px;}
+.texto-participar div.p-titulo p{color:#fff;font-size:20px;font-weight:600;}
+.texto-participar p.p-texto{padding:18px 20px;}
+.texto-participar form{text-align:center;padding:0 20px;}
+.texto-participar input:not([type="submit"]){width:100%;max-width:100%;height:48px;line-height: 48px;  border:solid #ED1C24 2px;border-radius:33px;color:#BABABA;font-size:16px;margin: 0;font-weight:600;padding-left: 35px;background-color: transparent;}
+.texto-participar input:not([type="submit"]):focus{ padding-left: 35px;background-color: transparent;}
+.texto-participar input::placeholder{color:#BABABA;font-weight:500;}
+.texto-participar input[type="submit"]{width:166px;height:48px;line-height: 48px; background-color:#ED1C24;font-weight:600;font-size:16px;color:#fff;border:0;border-radius:33px; margin:30px auto 5px auto;}
+#subscriptionform span.default_validation_msj.filled{font-size:10px;color:#ED1C24;display:block;margin-top:-18px;margin-bottom:4px;}
+.texto-participar label{text-align: left;width: 100%;display: block;font-size: 16px;font-weight: 600;padding: 10px 0 5px 10px;}
+input#su_nom, input#su_ape{ background: url(../img/ico-ayn.svg) no-repeat 10px 50%;background-size:16px 16px;}
+input#su_eml{background: url(../img/ico-mail.svg) no-repeat 10px 50%;background-size:16px 16px;}
+input#su_tel{background: url(../img/ico-tel.svg) no-repeat 10px 50%;background-size:16px 16px;}
+input#su_dni{background: url(../img/ico-dni.svg) no-repeat 10px 50%;background-size:16px 16px;}
+/* input{ background-size:16px 16px;} */
+#resultadosuscripcion{font-size: 10px;}
+
+@media (max-width:767.98px){
+    .cuerpo-participar{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:296px;height:-webkit-max-content;height:-moz-max-content;height:max-content;min-height:-webkit-max-content;min-height:-moz-max-content;min-height:max-content;text-align:center;}
+    .texto-participar,.img-participar{width:100%;}
+    .img-participar{height:180px;}
+    .img-participar p{display:block;}
+    .texto-participar p{font-size:13px;}
+    .texto-participar p.p-cerrar{display:none;}
+    .texto-participar div.p-titulo p{font-size: 16px;line-height: 20px;}
+    /* .texto-participar div.p-titulo p{color:#ED1C24;width:282px;font-size:22px;margin:auto;} */
+    /* .texto-participar p.p-texto{color: #FF2E70;text-align:center;font-size:14px!important;width:272px;margin: auto;padding-top: 10px!important;}  */
+    .img-participar{background:url(../img/popup-participacion-mobile.webp) no-repeat;background-size:cover;background-position:center top;}
+}
+
+@media (max-width:464.98px){.img-participar{height:166px;}}
 
 
 .footer{
