@@ -27,7 +27,7 @@
                 <a href="#ajinomoto" class="header__link" id="nav_ajinomoto">¿QU&Eacute; ES AJI-NO-MOTO?</a>
                 <a href="#sumate" class="header__link" id="nav_sumate">SUMATE AL DESAF&Iacute;O</a>
                 <a href="#recetas" class="header__link" id="nav_recetas">RECETAS</a>
-                <button class="header__link" onclick="$('popup_participar').show();"><span class="header__participar">PARTICIPAR</span></button>
+                <button class="header__link header__participar" onclick="$('#popup__participar').show();"><span class="">PARTICIPAR</span></button>
             </nav>
     </header>
 
@@ -157,7 +157,7 @@
                     <img class="premio__img" src="img/premio-2.webp" alt="">
                 </div>
             </div>
-            <buttton class="btn-participar">QUIERO PARTICIPAR</buttton>
+            <buttton class="btn-participar" onclick="$('#popup__participar').show();" >QUIERO PARTICIPAR</buttton>
         </section>
 
         <section class="cuadro" id="ajinomoto">
@@ -348,14 +348,14 @@
         </div>
     </footer>
 
-    <div id="popup-participar" class="" >
+    <div id="popup__participar" class="" style="display: none;">
         <!-- style="display:none;" -->
         <div class="cuerpo-participar flex" >
             <div class="img-participar" >
-                <p><button onclick="$('#popup-participar').hide();" name="Cerrar"><img src="img/btn-cerrar-mobile.png" alt="Cerrar popup participar" width="12" height="12"></button></p>
+                <p><button onclick="$('#popup__participar').hide();" name="Cerrar"><img src="img/btn-cerrar-mobile.png" alt="Cerrar popup participar" width="12" height="12"></button></p>
             </div>
             <div class="texto-participar">
-                <p class="p-cerrar"><button onclick="$('#popup-participar').hide();" name="Cerrar"><img src="img/btn-cerrar.webp" alt="Cerrar popup " width="12" height="12"></button></p>
+                <p class="p-cerrar"><button onclick="$('#popup__participar').hide();" name="Cerrar"><img src="img/btn-cerrar.webp" alt="Cerrar popup " width="12" height="12"></button></p>
 
                 <div class="p-titulo"><p>¿Querés descubrir el secreto del sabor y participar por increíbles premios?</p> </div>
                 
@@ -390,7 +390,7 @@
                                 data-parsley-type-message= "Debes ingresar un mail válido."
                                 data-parsley-required 
                     >
-                    <input id="botonparticipar" type="submit" value="PARTICIPAR" onclick="validarSuscripcion(); return 0;">
+                    <input id="botonparticipar" type="submit" value="PARTICIPAR" onclick="$('#popup__participar').hide();validarSuscripcion(); return 0;">
                     <div id="resultadosuscripcion"></div>
                 </form>
             </div>
